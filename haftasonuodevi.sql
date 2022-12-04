@@ -5,7 +5,7 @@ select sum(shipping_fee) as ÖDENECEK_TUTAR from cargo_companies;
 
 
 --2. Halihazırda indirimli ve isminde 'b' geçen tüm ürünleri listeleyiniz.
---products tablosunun içersine (at_a_discount) adında boolean değer alan kolon eklenmiştir.
+  --products tablosunun içersine (at_a_discount) adında boolean değer alan kolon eklenmiştir.
   --at_a_discount = TRUE ise ürün indirimdedir.
    
    
@@ -17,7 +17,7 @@ select sum(shipping_fee) as ÖDENECEK_TUTAR from cargo_companies;
 -- küçük harf c ve büyük harf C dikkate alınmalıdır.
 
   select * from products as pro
-  where pro.name LIKE '__c%' or pro.name LIKE '__c%'
+  where pro.name LIKE '__C%' or pro.name LIKE '__c%'
   
 
 4.-Bir kişinin sipariş oluştururken kullanacağı insert komutlarını yazınız (alt tablolar dahil ve siparişte en az 3 ürün olacak şekilde)
